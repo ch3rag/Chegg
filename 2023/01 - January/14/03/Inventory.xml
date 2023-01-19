@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory_list>
+	<year>2022</year>
+	<buildings>
+		<building>
+			<id>B01</id>
+			<address>5 Street23, Wollongong</address>
+			<inventory>
+				<item>
+					<sn>SerPE046</sn>
+					<description>Main Server</description>
+					<status>ok</status>
+				</item>
+				<item>
+					<sn>PrHP02</sn>
+					<description>Printer(second floor)</description>
+					<status>ok</status>
+				</item>
+				<item>
+					<sn>L0123</sn>
+					<description>Laptop in storage</description>
+					<status>damaged</status>
+				</item>
+			</inventory>
+		</building>
+		<building>
+			<id>B12</id>
+			<address>15 Cliff Drive, Nowra</address>
+			<inventory>
+				<item>
+					<sn>CoDell045</sn>
+					<description>Personal computer</description>
+					<status>ok</status>
+				</item>
+			</inventory>
+		</building>
+		<building>
+			<id>B5</id>
+			<address>32 Powell St, Bowral</address>
+			<inventory>
+				<item>
+					<sn>SerD23</sn>
+					<description>Server</description>
+					<status>ok</status>
+				</item>
+				<item>
+					<sn>CoHP125</sn>
+					<description>Personal computer</description>
+					<status>repair</status>
+				</item>
+			</inventory>
+		</building>
+	</buildings>
+</inventory_list>

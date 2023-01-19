@@ -1,0 +1,11 @@
+the Farmer's Market
+5
+Apples
+12
+EggS
+3
+milK
+1.5
+CHEESE
+3
+potatoes
