@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="550.0" spacing="10.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pizza">
+	<children>
+		<Label contentDisplay="TOP" prefHeight="30.0" text="Joe's Pizza" />
+		<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+			<children>
+				<TitledPane animated="false" collapsible="false" text="Pizza Type">
+					<content>
+						<VBox prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+							<children>
+								<RadioButton mnemonicParsing="false" text="Cheese"
+									toggleGroup="$pizzaType" selected="true" fx:id="rdoCheesePizza">
+									<toggleGroup>
+										<ToggleGroup fx:id="pizzaType" />
+									</toggleGroup>
+								</RadioButton>
+								<RadioButton mnemonicParsing="false" text="Pepperoni"
+									toggleGroup="$pizzaType" fx:id="rdoPepperoniPizza" />
+								<RadioButton mnemonicParsing="false" text="Veggi"
+									toggleGroup="$pizzaType" fx:id="rdoVeggiPizza" />
+							</children>
+						</VBox>
+					</content>
+				</TitledPane>
+				<TitledPane animated="false" collapsible="false" text="Toppings">
+					<content>
+						<VBox prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+							<children>
+								<CheckBox mnemonicParsing="false" text="Extra Cheese"
+									fx:id="chkExtraCheese" />
+								<CheckBox mnemonicParsing="false" text="Bacon" fx:id="chkBacon" />
+								<CheckBox mnemonicParsing="false" text="Mushroom"
+									fx:id="chkMushroom" />
+							</children>
+						</VBox>
+					</content>
+				</TitledPane>
+				<TextArea prefHeight="100.0" prefWidth="120.0" fx:id="txtBill" />
+			</children>
+		</HBox>
+		<Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Calculate Total"
+			id="btnCalculate" onMouseClicked="#btnCalculateClicked" />
+	</children>
+</VBox>
