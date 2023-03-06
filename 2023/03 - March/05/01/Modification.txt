@@ -1,0 +1,29 @@
+BIT 8 7 6 5  4 3 2 1
+====================
+A = 0 1 0 0  0 0 0 1
+H = 0 1 0 0  1 0 0 0
+
+B = 0 1 0 0  0 0 1 0
+P = 0 1 0 1  0 0 0 0
+
+C = 0 1 0 0  0 0 1 1
+X = 0 1 0 1  1 0 0 0
+
+D = 0 1 0 0  0 1 0 0
+D = 0 1 0 0  0 1 0 0
+
+E = 0 1 0 0  0 1 0 1
+L = 0 1 0 0  1 1 0 0
+
+F = 0 1 0 0  0 1 1 0
+T = 0 1 0 1  0 1 0 0
+====================
+BIT 8 = Unchanged
+BIT 7 = Unchanged
+BIT 6 = Unchanged
+
+BIT 5 = Swapped W/ 2
+BIT 4 = Swapped W/ 1
+BIT 3 = Unchanged
+BIT 2 = Swapped W/ 5
+BIT 1 = Swapped W/ 4

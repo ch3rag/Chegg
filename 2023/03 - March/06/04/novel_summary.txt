@@ -1,0 +1,15 @@
+TTL
+Longest Line (14156): *** END OF THE PROJECT GUTENBERG EBOOK TWENTY THOUSAND LEAGUES UNDER THE SEAS  ***
+Shortest Line (2041): N
+Average Length: 58
+
+WOO
+Longest Line (3785): Section 5. General Information About Project Gutenberg-tm electronic works
+Shortest Line (1687): Oz.
+Average Length: 58
+
+ALG
+Longest Line (23): 2. Alice through Q.�s 3d (_by railwayv) to 4th (_Tweedledum and Tweedledee_)
+Shortest Line (1672): 1
+Average Length: 54
+

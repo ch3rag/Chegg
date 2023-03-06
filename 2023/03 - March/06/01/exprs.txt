@@ -1,0 +1,10 @@
+b
+( not c )
+( a and b )
+( a and ( not b ) )
+( not ( b and a ) )
+( ( not a ) and b )
+( ( not ( not ( b and a ) ) ) and ( ( not ( a and b ) ) and d ) )
+( ( a and ( not b ) ) and ( not c ) )
+( not ( not c ) )
+( not ( not ( not c ) ) )
