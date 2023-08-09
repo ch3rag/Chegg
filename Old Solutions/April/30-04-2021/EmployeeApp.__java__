@@ -1,0 +1,168 @@
+import java.util.*;
+
+public class EmployeeApp {
+    public static void main(String args) {
+    Scanner s = new Scanner(System.in);
+    ArrayList<Employee> arl = new ArrayList<Employee>();
+
+    String name;
+    String ID;
+    double payRate;
+    char employeeType;
+    char keepGoing = 'Y';
+    double annualSalary;
+    double hoursWorked;
+    String deleteID;
+    int deleteConstant;
+    char deleteMore = 'y';
+    String e = "Employee name can not be blank, please re enter";
+
+    while(keepGoing=='Y' || keepGoing=='y'){
+           System.out.print("Enter employee's name: ");
+           name = s.nextLine();
+           System.out.println();
+          
+           try{
+               if (name.isEmpty()) {
+                throw new IllegalAccessException(e);
+               }
+           } catch(IllegalAccessException ex) {
+                System.out.println(ex.getMessage());
+           }
+           System.out.print("Enter " + name + "'s ID#: ");
+           ID = s.nextLine();
+           System.out.println();
+          
+           if(ID.isEmpty()) {
+               System.out.println("ID is required. Please re-enter");
+               throw new IllegalAccessException();
+           }
+          
+           System.out.print("Is the employee Salaried or Hourly? (enter S for salaried and H for hourly): ");
+           employeeType = s.nextLine().charAt(0);
+           System.out.println();
+          
+          
+          
+           if (employeeType != 'h' || employeeType != 'H' || employeeType != 's' || employeeType != 'S' || employeeType.isEmpty()){
+               System.out.print("Employee type can only be H or S, please re-enter: ");
+               employeeType = s.nextLine().charAt(0);
+               System.out.println();
+               throw new IllegalAccessException();
+           }
+          
+           if(employeeType == 'h' || employeeType == 'H'){
+           System.out.print("Enter " + name + "'s pay rate: ");
+           payRate = Double.parseDouble(s.nextLine());
+           System.out.println();
+          
+           if(){
+          
+          
+           throw new NumberFormatException;
+           }
+          
+           Employee employee1 = new Employee(name,ID,employeeType,payRate);
+           }
+           else if(employeeType == 's' || employeeType == 'S') {
+               System.out.print("Enter "+ name + "'s yearly salary");
+               annualSalary = Double.parseDouble(s.nextLIne());
+               System.out.println();
+              
+           if(){
+               error
+           }
+          
+               Employee employee1 = new Employee(name, ID, employeeType, annualSalary);
+           }
+          
+          
+          
+          
+           System.out.print("Would you like to add anoyher employee?(Y for yes or N for no"):
+           keepGoing = s.nextLine().charAt(0);
+       }
+       }catch(
+
+    IllegalAccessException e)
+    {
+    }for(
+    int i = 0;i<arl.size();i++){
+       System.out.println("Current contents of ArrayList...");
+       System.out.println();
+       System.out.print("/n" + arl.get(i).getName() + "/n" + "ID #" + arl.get(i).getidNumber());
+      
+       if(employeeType == 'h' || employeeType == 'H'){
+           System.out.print("Enter " + arl.get(i).getName() + "'s hours worked : ");
+           hoursWorked = Double.parseDouble(s.nextLine();
+          
+           if(){
+               error
+           }
+      
+       System.out.println("Weekly Gross Pay - $" + arl.get(i).getGrossPay(hoursWorked));
+       }
+       else {
+           System.out.println("Weekly Gross Pay - $" + arl.get(i).getGrossPay());
+       }
+      
+       }
+
+    System.out.print("Enter an ID number to delete corresponding record:");deleteID=s.nextLine();
+
+    if(){
+           error
+       }
+
+    deleteConstant=arl.size();
+
+    for(
+    int j = 0;i<arl.size();j++){
+           if(deleteID == arl(i).getidNumber()){
+               arl(i).remove;
+           }
+       }
+
+    while(deleteMore=='y'||deleteMore=='Y'){
+       if(arl.size() < deleteConstant){
+           System.out.println("Employee with ID# " + deleteID + " has been removed from the ArrayList.");
+       }
+       else{
+       System.out.print("ERROR - ID# not found. Please try again.");
+       deleteID = s.nextLine();
+      
+       if(){
+           error
+       }
+      
+       }
+       System.out.print("Do you wish to delete any other employees?");
+       deleteMore = s.nextLine().charAt(0);
+      
+       if(){
+           error
+       }
+      
+       }
+
+    for(
+    int i = 0;i<arl.size();i++){
+       System.out.println("Current contents of ArrayList...");
+       System.out.println();
+       System.out.print("/n" + arl.get(i).getName() + "/n" + "ID #" + arl.get(i).getidNumber());
+      
+       if(employeeType == 'h' || employeeType == 'H'){
+           System.out.print("Enter " + arl.get(i).getName() + "'s hours worked : ");
+           hoursWorked = Double.parseDouble(s.nextLine();
+          
+           if(){
+               error
+           }
+      
+       System.out.println("Weekly Gross Pay - $" + arl.get(i).getGrossPay(hoursWorked));
+       }
+       else {
+           System.out.println("Weekly Gross Pay - $" + arl.get(i).getGrossPay());
+       }
+      
+       }

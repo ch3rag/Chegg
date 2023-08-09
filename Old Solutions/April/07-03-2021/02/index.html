@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items Total</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            align-items: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="total">
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+        </tr>
+    </table>
+    <script>
+        var prices = [];
+        var price;
+        var sum = 0;
+        while (true) {
+            var input = window.prompt('Enter The Amout Of Item ' + (prices.length + 1) + ': ');
+            price = parseInt(input);
+            if (price === -1) {
+                break;
+            } else {
+                prices.push(price);
+                sum += price;
+            }
+        }
+
+        var table = document.getElementById('total');
+
+        for (var i = 0; i < prices.length; i++) {
+            var rowElem = document.createElement('tr');
+            var itemElem = document.createElement('td');
+            var amountElem = document.createElement('td');
+
+            itemElem.innerText = i + 1;
+            amountElem.innerText = prices[i];
+
+            rowElem.appendChild(itemElem);
+            rowElem.appendChild(amountElem);
+
+            table.appendChild(rowElem);
+        }
+
+        // Add Total Row
+        var rowElem = document.createElement('tr');
+        var totalElem = document.createElement('td');
+        var totalAmountElem = document.createElement('td');
+
+        totalElem.innerText = 'Total';
+        totalAmountElem.innerText = sum;
+
+        rowElem.appendChild(totalElem);
+        rowElem.appendChild(totalAmountElem);
+
+        table.appendChild(rowElem);
+    </script>
+</body>
+
+</html>

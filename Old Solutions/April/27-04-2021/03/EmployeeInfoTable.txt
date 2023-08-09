@@ -1,0 +1,18 @@
+                     | Hrs |  Hourly |   Weekly
+Name                 | Wkd |    Rate |      Pay
+-----------------------------------------------
+Samuel Jamison       |  15 | $ 13.25 | $ 198.75
+Susan Ball           |  22 | $ 10.19 | $ 224.25
+Floyd Farris         |  25 | $ 19.56 | $ 488.98
+Leah Karson          |  18 | $ 17.75 | $ 319.50
+Eli O'Leary          |   6 | $ 14.37 | $  86.21
+Kirsten Franks       |  22 | $ 12.79 | $ 281.38
+Bryce Matthis        |  12 | $ 16.25 | $ 194.95
+Luke Kellermeier     |  23 | $ 11.00 | $ 253.06
+Donna Schwartz       |  13 | $ 12.75 | $ 165.76
+Brent Ripple         |  12 | $ 14.28 | $ 171.33
+Janice Speck         |  24 | $ 13.76 | $ 330.13
+Darlene Ayers        |  21 | $ 15.49 | $ 325.27
+-----------------------------------------------
+             Total Payroll for Week: $ 3,039.57
+-----------------------------------------------

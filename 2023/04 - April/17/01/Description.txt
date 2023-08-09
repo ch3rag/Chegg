@@ -1,0 +1,20 @@
+Book.java
+Description: Represents A Single Book Entity
+Attributes: A Book Contains Four Attributes
+1. Title: Private String
+2. Author: Private String
+3. Pages: Private Integer
+4. Price: Private Double
+Methods: Book Class Contains 2 Methods
+1. Book() Constructor: Instantiate A Book Instance Using The Arguments
+2. String toString(): Returns The String Representation Of The Book Object
+
+
+FileReader.java
+Description: A Helper Class To Read Book Objects From A File
+Attributes: FileReader Does Not Contain Any Attributes
+Methods: FileReader Class Contains 2 Methods
+Book[] readBooks(String fileName):
+  Returns A Book Array Containing All The Books Objects In The Given File
+Book[] readBooks(String fileName, String searchTerm):
+ Returns A Book Array Containing Only The Books Objects Whose Title Contains The Search Term In The Given File

@@ -1,0 +1,177 @@
+<html>
+
+<head>
+	<style>
+		table {
+			text-align: center;
+			margin-left: auto;
+
+			margin-right: auto;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular',
+				'Lucida Grande', 'Lucida Sans Unicode',
+				Geneva, Verdana, sans-serif;
+		}
+
+		input,
+		button {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular',
+				'Lucida Grande', 'Lucida Sans Unicode',
+				Geneva, Verdana, sans-serif;
+			align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div align="center">
+		<h1>Grade Activities</h1>
+
+		<button onclick="addActivity()" id="addActivity">
+			Add Activity</button>
+
+		<label for="activity">Activity</label>
+		<input type="text" id="activity" size="3">
+
+		<label for="percentage">Percentage</label>
+		<input type="text" id="percentage" size="3"><br>
+
+		<button onclick="addGrade()" id="addGrade">
+			Add Grade</button>
+
+		<label for="grade">Grade</label>
+		<input type="text" id="grade" size="3"">
+
+<label for=" activityNo">Activity no</label>
+		<input type="text" id="activityNo" size="3"><br>
+
+		<button onclick="deleteActivity()" id="deleteActivity">
+			Delete Activity </button>
+
+		<table border="2" id="theTable" style="width:70%">
+			<tr>
+				<th>No</th>
+				<th>Activity</th>
+				<th>Percentage</th>
+				<th>Grade</th>
+			</tr>
+		</table>
+		<p id="ERR" style="color:red;">Error Message: </p>
+		<script>
+			// JavaScript
+			// Error <P> Element
+			var errorElem = document.getElementById('ERR');
+			// Activity Table
+			var tableElem = document.getElementById('theTable');
+			// Number Of Activities
+			var numActivities = 0;
+			// Text Boxes
+			var txtActivity = document.getElementById('activity');
+			var txtPercent = document.getElementById('percentage');
+			var txtGrade = document.getElementById('grade');
+			var txtActivityNo = document.getElementById('activityNo');
+
+			// Adds A Activity
+			function addActivity() {
+				// Get The Value Of The Activity Name
+				var activityName = txtActivity.value;
+				
+				// If Activity Name Is Empty, Error Is Displayed
+				if (activityName === '') {
+					errorElem.innerText = 'Error Message: Activity name is rejected.';
+					return;
+				}
+
+				// Get Percentage Of The Activity
+				var percent = parseInt(txtPercent.value);
+				
+				if (isNaN(percent) || percent < 0 || percent > 100) {
+					errorElem.innerText = 'Error Message: Percentage is rejected.';
+					return;
+				}
+
+				// Validations Passed
+				// Add The Activity To Table
+				// Create Elements
+				var trElem = document.createElement('tr');
+				var tdIdElem = document.createElement('td');
+				var tdActivityElem = document.createElement('td');
+				var tdPercentageElem = document.createElement('td');
+				var tdGradeElem = document.createElement('td');
+
+				// Update Text
+				tdIdElem.innerText = numActivities + 1;
+				tdActivityElem.innerText = activityName;
+				tdPercentageElem.innerText = percent;
+
+				// Add Elements To Table
+				trElem.appendChild(tdIdElem);
+				trElem.appendChild(tdActivityElem);
+				trElem.appendChild(tdPercentageElem);
+				trElem.appendChild(tdGradeElem);
+
+				tableElem.appendChild(trElem);
+
+				// Clear Text Boxes
+				txtActivity.value = '';
+				txtPercent.value = '';
+				errorElem.innerText = 'Error Message: ';
+
+				// Increment Activity Count
+				numActivities++;
+			}
+
+			// Adds A Grade
+			function addGrade() {
+				// Get Grade Value
+				var grade = parseInt(txtGrade.value);
+
+				// Check The Validity Of Grade Value
+				if (isNaN(grade) || grade < 0 || grade > 100) {
+					errorElem.innerText = 'Error Message: Grade is rejected.';
+					return;
+				}
+
+				// Get Activity Number
+				var activityNo = parseInt(txtActivityNo.value);
+				// Check The Validity Of Activity Number
+				if (isNaN(activityNo) || activityNo < 0 || activityNo > numActivities) {
+					errorElem.innerText = 'Error Message: Activity No is rejected.';
+					return;
+				}
+
+				// Validations Passed
+				// Update The Grade For Activity
+				tableElem.rows[activityNo].cells[3].innerText = grade;
+
+				// Clear The Text Boxes
+				txtGrade.value = '';
+				txtActivityNo.value = '';
+				errorElem.innerText = 'Error Message: ';
+			}
+
+			// Deletes The Last Added Activity
+			function deleteActivity() {
+				if (numActivities == 0) {
+					errorElem.innerText = 'Error Message: No more activities to remove.';
+				} else {
+					// Remove Last Row
+					tableElem.rows[numActivities].remove();
+					// Decrease Number Of Activities
+					numActivities--;
+					// Clear Error
+					errorElem.innerText = 'Error Message: ';
+				}
+			}
+
+
+		</script>
+</body>
+
+</html>

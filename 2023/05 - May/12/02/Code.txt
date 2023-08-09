@@ -1,0 +1,42 @@
+// This program accepts any number of purchase prices
+// and computes state sales tax as 6% of the value
+// and city sales tax as 2% of the value
+// Modify the program so that the user enters
+// the two tax rates
+// at the start of the program
+
+start
+	Declarations
+		num price
+		num STATE_TAX_RATE = 0.06
+		num CITY_TAX_RATE = 0.02
+		num totalTax
+		num total
+	startUp()
+	while price not equal to 0
+	  mainLoop()
+	endwhile
+	finishUp()
+stop
+
+startUp()
+	output "Enter state sales tax"
+	input STATE_TAX_RATE
+	output "Enter city sales tax"
+	input CITY_TAX_RATE
+	output "Enter a price or 0 to quit"
+	input price
+return
+
+mainLoop()
+	totalTax = price * STATE_TAX_RATE + price * CITY_TAX_RATE
+	total = price + totalTax
+	output "Price is " , price, " and total tax is ", totalTax
+	output "Total is ", total
+	output "Enter a price or 0 to quit"
+	input price
+return
+
+finishUp()
+	output "End of program"
+return

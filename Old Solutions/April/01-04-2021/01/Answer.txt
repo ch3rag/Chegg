@@ -1,0 +1,31 @@
+​
+CBLOCK defines a block of constants.
+
+Syntax:
+
+cblock [expr]
+ label[:increment][,label[:increment]]
+endc
+
+CBLOCK defines a list of named sequential symbols. The purpose of this directive is to assign address offsets to many labels.
+The list of names ends when an ENDC directive is encountered.
+EXPR indicates the starting value for the first name in the block.
+Multiple names may be given on a line, separated by commas.
+By default the values are increment by one if not specified.
+Solution:
+
+Using above definition,
+
+CBLOCK 0x29
+    V1, V2, V3, V4, V5
+ENDC
+
+V1 = 29
+V2 = 30
+V3 = 31
+V4 = 32
+V5 = 33
+
+ 
+
+​
