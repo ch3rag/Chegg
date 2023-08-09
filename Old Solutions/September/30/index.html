@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment</title>
+</head>
+<body>
+	<!-- Form -->
+	<form>
+		<!-- Input Text Box -->
+		<label for="txtInput">Score:
+			<input id="txtInput" />
+		</label>
+		<!-- Error Message -->
+		<span id="lblError" style="color: red; visibility: hidden;">Score Must Be Between 0 & 100.</span>
+		<br /> <br />
+		<!-- Buttons -->
+		<button id="btnAdd" type="button">Add Grade</button>
+		<button id="btnResult" type="button">Display Results</button>
+	</form>
+	<!-- A Div To Display Results -->
+	<div id="results" style="font-weight: bold; font-size: large; margin-top: 15px;"></div>
+	<!-- Add JavaScript -->
+	<script src="score.js"></script>
+</body>
+</html>

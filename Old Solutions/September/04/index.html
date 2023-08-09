@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+        // JavaScript Code
+        // Input Value From The User
+        var value = prompt("Enter A Positive Integer: ");
+        // Validate User Input
+        if (parseInt(value) > 0) {
+            var result = "";
+            // While More Than 1 Digits Left In User Input
+            while (value.length > 1) {
+                // Append First Digit To Result
+                result += value[0] + ", ";
+                // Remove First Digit From User Input
+                value = value.substring(1);
+            }
+            // Append Last Digit
+            result += value;
+            
+            // Display Result
+            alert(result);
+        } else {
+            // Invalid Input
+            alert("Please Enter A Positive Integer.");
+        }
+    </script>
+  </body>
+</html>

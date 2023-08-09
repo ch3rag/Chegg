@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root Flow Pane -->
+<FlowPane hgap="10.0" prefHeight="190" prefWidth="240" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ScoreController">
+   <children>
+      <!-- Score Text Boxes -->
+      <Label text="Score - 1" />
+      <TextField fx:id="text_Score1" />
+      <Label text="Score - 2" />
+      <TextField fx:id="text_Score2" />
+      <Label text="Score - 3" />
+      <TextField fx:id="text_Score3" />
+      <!-- Label To Display Average -->
+      <Label text="Average Score:" />
+      <Label text="0.0" fx:id="label_Avg_Score"/>
+      <Button mnemonicParsing="false" fx:id="btn_Calculate" text="Calculate Average" onMouseClicked="#btn_Calculate_Clicked" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</FlowPane>

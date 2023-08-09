@@ -1,0 +1,33 @@
+package com.cs;
+
+/**
+ * The logic will select every nth device to be inspected
+ * before it is shipped to a customer to ensure high quality.
+ */
+public class AlexaInspectionDeviceSelector {
+
+    private final Incrementable incrementer;
+
+    /**
+     * Instantiates a new Alexa inspection device selector with the given
+     * incrementer.
+     *
+     * @param incrementer the incrementer
+     */
+    public AlexaInspectionDeviceSelector(Incrementable incrementer) {
+        this.incrementer = incrementer;
+    }
+
+    /**
+     * This method returns the position of the device to be selected for quality
+     * checks. The position is
+     * based on its location on the conveyor belt. For a batch of devices the first
+     * element on the belt is 1.
+     *
+     * @return the position of the device to be selected and checked for quality.
+     */
+    public int getSampleDevicePosition() {
+        incrementer.increment();
+        return incrementer.getValue();
+    }
+}
