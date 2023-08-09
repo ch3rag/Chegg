@@ -1,0 +1,15 @@
+E:\Programs\BookAssignment\bin\Debug\net6.0\BookAssignment.exe
+E:\Programs\BookAssignment\bin\Debug\net6.0\BookAssignment.deps.json
+E:\Programs\BookAssignment\bin\Debug\net6.0\BookAssignment.runtimeconfig.json
+E:\Programs\BookAssignment\bin\Debug\net6.0\BookAssignment.dll
+E:\Programs\BookAssignment\bin\Debug\net6.0\BookAssignment.pdb
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.csproj.AssemblyReference.cache
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.AssemblyInfoInputs.cache
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.AssemblyInfo.cs
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.csproj.CoreCompileInputs.cache
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.dll
+E:\Programs\BookAssignment\obj\Debug\net6.0\refint\BookAssignment.dll
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.pdb
+E:\Programs\BookAssignment\obj\Debug\net6.0\BookAssignment.genruntimeconfig.cache
+E:\Programs\BookAssignment\obj\Debug\net6.0\ref\BookAssignment.dll

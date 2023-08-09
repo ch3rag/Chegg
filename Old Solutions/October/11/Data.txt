@@ -1,0 +1,10 @@
+Welcome to python programming language. Today we will learn about
+python file processing. Python includes various builtin functions to
+assist the programmer with file handling. You can read and write data
+from and to files using these builtin functions.
+
+Python is very powerful scripting language!
+Python is a very beginner friendly programming language.
+It is very easy to get started with python unlike other languages such as
+java. Honest Honest Honest honest!!
+hello world

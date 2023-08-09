@@ -1,0 +1,12 @@
+{
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar",
+		"D:\\Softwares\\Programming\\lib\\javajunit-4.13.2.jar",
+		"D:\\Softwares\\Programming\\lib\\javahamcrest-core-1.3.jar",
+		"d:\\Softwares\\Programming\\Java\\lib\\junit-platform-console-standalone-1.7.0-M1 - Copy.jar"
+	],
+	"cSpell.words": [
+		"Capricornus",
+		"irand"
+	]
+}

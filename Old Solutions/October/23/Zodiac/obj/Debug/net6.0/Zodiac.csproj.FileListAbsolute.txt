@@ -1,0 +1,15 @@
+E:\Programs\Zodiac\bin\Debug\net6.0\Zodiac.exe
+E:\Programs\Zodiac\bin\Debug\net6.0\Zodiac.deps.json
+E:\Programs\Zodiac\bin\Debug\net6.0\Zodiac.runtimeconfig.json
+E:\Programs\Zodiac\bin\Debug\net6.0\Zodiac.dll
+E:\Programs\Zodiac\bin\Debug\net6.0\Zodiac.pdb
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.csproj.AssemblyReference.cache
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.AssemblyInfoInputs.cache
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.AssemblyInfo.cs
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.csproj.CoreCompileInputs.cache
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.dll
+E:\Programs\Zodiac\obj\Debug\net6.0\refint\Zodiac.dll
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.pdb
+E:\Programs\Zodiac\obj\Debug\net6.0\Zodiac.genruntimeconfig.cache
+E:\Programs\Zodiac\obj\Debug\net6.0\ref\Zodiac.dll
